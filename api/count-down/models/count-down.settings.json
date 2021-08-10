@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "count_downs",
+  "info": {
+    "name": "count-down"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "event": {
+      "model": "events"
+    }
+  }
+}

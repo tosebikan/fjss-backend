@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/count-down",
+      "handler": "count-down.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/count-down",
+      "handler": "count-down.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/count-down",
+      "handler": "count-down.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
