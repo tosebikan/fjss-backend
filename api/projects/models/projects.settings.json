@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "testimonials",
+  "collectionName": "projects",
   "info": {
-    "name": "testimonial",
+    "name": "projects",
     "description": ""
   },
   "options": {
@@ -12,16 +12,23 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
-      "type": "string",
-      "required": true
+    "title": {
+      "type": "string"
     },
-    "image_url": {
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "onGoing",
+        "completed",
+        "upComing"
+      ]
+    },
+    "image": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
-        "files",
         "images",
+        "files",
         "videos"
       ],
       "plugin": "upload",
@@ -29,7 +36,7 @@
       "pluginOptions": {}
     },
     "text": {
-      "type": "text"
+      "type": "richtext"
     }
   }
 }

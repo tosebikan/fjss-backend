@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "testimonials",
+  "collectionName": "media_images",
   "info": {
-    "name": "testimonial",
-    "description": ""
+    "name": "media-images"
   },
   "options": {
     "increments": true,
@@ -12,24 +11,24 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
-      "type": "string",
-      "required": true
-    },
-    "image_url": {
+    "image": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
-        "files",
         "images",
+        "files",
         "videos"
       ],
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
     },
-    "text": {
-      "type": "text"
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "photo",
+        "graphics"
+      ]
     }
   }
 }

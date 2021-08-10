@@ -1,8 +1,8 @@
 {
-  "kind": "collectionType",
-  "collectionName": "live_youtubes",
+  "kind": "singleType",
+  "collectionName": "livelinks",
   "info": {
-    "name": "Live Youtube"
+    "name": "livelink"
   },
   "options": {
     "increments": true,
@@ -12,8 +12,7 @@
   "pluginOptions": {},
   "attributes": {
     "link": {
-      "type": "string",
-      "required": true
+      "type": "string"
     }
   }
 }

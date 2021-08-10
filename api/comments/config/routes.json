@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/live-youtubes",
-      "handler": "live-youtube.find",
+      "path": "/comments",
+      "handler": "comments.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/live-youtubes/count",
-      "handler": "live-youtube.count",
+      "path": "/comments/count",
+      "handler": "comments.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/live-youtubes/:id",
-      "handler": "live-youtube.findOne",
+      "path": "/comments/:id",
+      "handler": "comments.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/live-youtubes",
-      "handler": "live-youtube.create",
+      "path": "/comments",
+      "handler": "comments.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/live-youtubes/:id",
-      "handler": "live-youtube.update",
+      "path": "/comments/:id",
+      "handler": "comments.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/live-youtubes/:id",
-      "handler": "live-youtube.delete",
+      "path": "/comments/:id",
+      "handler": "comments.delete",
       "config": {
         "policies": []
       }

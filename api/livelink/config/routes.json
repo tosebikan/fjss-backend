@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/livelink",
+      "handler": "livelink.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/livelink",
+      "handler": "livelink.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/livelink",
+      "handler": "livelink.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

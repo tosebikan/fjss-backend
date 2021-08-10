@@ -1,0 +1,73 @@
+{
+  "kind": "collectionType",
+  "collectionName": "news_infos",
+  "info": {
+    "name": "news_info",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "text": {
+      "type": "richtext"
+    },
+    "comments": {
+      "via": "news_info",
+      "collection": "comments"
+    },
+    "tags": {
+      "type": "enumeration",
+      "enum": [
+        "Scotland",
+        "Event",
+        "Community",
+        "FJSS",
+        "Lecture",
+        "Forum",
+        "Conference",
+        "Summit",
+        "Meeting",
+        "Seminar"
+      ]
+    },
+    "archives": {
+      "type": "enumeration",
+      "enum": [
+        "jan",
+        "feb",
+        "mar",
+        "apr",
+        "may",
+        "jun",
+        "jul",
+        "aug",
+        "sep",
+        "oct",
+        "nov",
+        "dec"
+      ]
+    }
+  }
+}
