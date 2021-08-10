@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "live_youtubes",
+  "info": {
+    "name": "Live Youtube"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "link": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
