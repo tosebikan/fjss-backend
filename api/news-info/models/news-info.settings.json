@@ -52,23 +52,6 @@
         "Seminar"
       ]
     },
-    "archives": {
-      "type": "enumeration",
-      "enum": [
-        "jan",
-        "feb",
-        "mar",
-        "apr",
-        "may",
-        "jun",
-        "jul",
-        "aug",
-        "sep",
-        "oct",
-        "nov",
-        "dec"
-      ]
-    },
     "thumbnail": {
       "model": "file",
       "via": "related",
@@ -80,6 +63,9 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "date": {
+      "type": "date"
     }
   }
 }
