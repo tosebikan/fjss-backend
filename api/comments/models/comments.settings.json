@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "comments",
   "info": {
-    "name": "comments"
+    "name": "comments",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -32,6 +33,10 @@
     "news_info": {
       "via": "comments",
       "model": "news-info"
+    },
+    "approved": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
