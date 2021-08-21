@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "media_images",
   "info": {
-    "name": "media-images"
+    "name": "media-images",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -27,7 +28,10 @@
       "type": "enumeration",
       "enum": [
         "photo",
-        "graphics"
+        "graphics",
+        "fjss",
+        "events",
+        "windrush"
       ]
     }
   }
